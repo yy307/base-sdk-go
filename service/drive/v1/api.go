@@ -16,6 +16,7 @@ package larkdrive
 import (
 	"bytes"
 	"context"
+	larkcore "github.com/yy307/base-sdk-go/v3/core"
 	"net/http"
 )
 
