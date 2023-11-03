@@ -14,6 +14,7 @@
 package larkdrive
 
 import (
+	larkcore "github.com/yy307/base-sdk-go/v3/core"
 	"io"
 
 	"bytes"
@@ -21,8 +22,6 @@ import (
 	"io/ioutil"
 
 	"fmt"
-
-	"github.com/larksuite/base-sdk-go/v3/core"
 )
 
 const (

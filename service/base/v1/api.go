@@ -15,9 +15,8 @@ package larkbase
 
 import (
 	"context"
+	larkcore "github.com/yy307/base-sdk-go/v3/core"
 	"net/http"
-
-	"github.com/larksuite/base-sdk-go/v3/core"
 )
 
 func NewService(config *larkcore.Config) *BaseService {

@@ -19,7 +19,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/larksuite/base-sdk-go/v3/core"
+	"github.com/yy307/base-sdk-go/v3/core"
 )
 
 const (
@@ -1265,14 +1265,14 @@ func (builder *AppTableCreateHeaderBuilder) Build() *AppTableCreateHeader {
 }
 
 type AppTableField struct {
-	FieldId     *string                   `json:"field_id,omitempty"`    // 多维表格字段 id
-	FieldName   *string                   `json:"field_name,omitempty"`  // 多维表格字段名
-	Type        *int                      `json:"type,omitempty"`        // 多维表格字段类型
-	Property    *AppTableFieldProperty    `json:"property,omitempty"`    // 字段属性，具体参考：[字段编辑指南](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-field/guide)
-	Description *string		      `json:"description,omitempty"` // 字段的描述
-	IsPrimary   *bool                     `json:"is_primary,omitempty"`  // 是否是索引列
-	UiType      *string                   `json:"ui_type,omitempty"`     // 字段在界面上的展示类型，例如进度字段是数字的一种展示形态
-	IsHidden    *bool                     `json:"is_hidden,omitempty"`   // 是否是隐藏字段
+	FieldId     *string                `json:"field_id,omitempty"`    // 多维表格字段 id
+	FieldName   *string                `json:"field_name,omitempty"`  // 多维表格字段名
+	Type        *int                   `json:"type,omitempty"`        // 多维表格字段类型
+	Property    *AppTableFieldProperty `json:"property,omitempty"`    // 字段属性，具体参考：[字段编辑指南](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-field/guide)
+	Description *string                `json:"description,omitempty"` // 字段的描述
+	IsPrimary   *bool                  `json:"is_primary,omitempty"`  // 是否是索引列
+	UiType      *string                `json:"ui_type,omitempty"`     // 字段在界面上的展示类型，例如进度字段是数字的一种展示形态
+	IsHidden    *bool                  `json:"is_hidden,omitempty"`   // 是否是隐藏字段
 }
 
 type AppTableFieldBuilder struct {
@@ -1338,7 +1338,7 @@ func (builder *AppTableFieldBuilder) Property(property *AppTableFieldProperty) *
 // 字段的描述
 //
 // 示例值：
-func (builder *AppTableFieldBuilder) Description(description *AppTableFieldDescription) *AppTableFieldBuilder {
+func (builder *AppTableFieldBuilder) Description(description string) *AppTableFieldBuilder {
 	builder.description = description
 	builder.descriptionFlag = true
 	return builder
@@ -1389,7 +1389,7 @@ func (builder *AppTableFieldBuilder) Build() *AppTableField {
 		req.Property = builder.property
 	}
 	if builder.descriptionFlag {
-		req.Description = builder.description
+		req.Description = &builder.description
 	}
 	if builder.isPrimaryFlag {
 		req.IsPrimary = &builder.isPrimary

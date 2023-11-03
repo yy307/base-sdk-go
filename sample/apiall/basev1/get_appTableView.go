@@ -16,9 +16,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/base-sdk-go/v3"
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/base/v1"
 )
 
 // GET /open-apis/bitable/v1/apps/:app_token/tables/:table_id/views/:view_id

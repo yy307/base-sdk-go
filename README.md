@@ -3,7 +3,7 @@
 
 ## 安装
 ```go
-go get -u github.com/larksuite/base-sdk-go/v3
+go get -u github.com/yy07/base-sdk-go/v3
 ```
 
 ## Base Client
@@ -161,9 +161,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/base-sdk-go/v3"
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/base/v1"
+	"github.com/yy07/base-sdk-go/v3"
+	"github.com/yy07/base-sdk-go/v3/core"
+	"github.com/yy07/base-sdk-go/v3/service/base/v1"
 )
 
 func main() {
@@ -212,9 +212,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/base-sdk-go/v3"
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/drive/v1"
+	"github.com/yy07/base-sdk-go/v3"
+	"github.com/yy07/base-sdk-go/v3/core"
+	"github.com/yy07/base-sdk-go/v3/service/drive/v1"
 	"os"
 )
 
@@ -267,9 +267,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/larksuite/base-sdk-go/v3"
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/drive/v1"
+	"github.com/yy07/base-sdk-go/v3"
+	"github.com/yy07/base-sdk-go/v3/core"
+	"github.com/yy07/base-sdk-go/v3/service/drive/v1"
 )
 
 // 如果附件开启高级权限，需要配置Extra字段。

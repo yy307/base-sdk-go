@@ -16,9 +16,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/base-sdk-go/v3"
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/drive/v1"
 )
 
 // GET /open-apis/drive/v1/medias/:file_token/download

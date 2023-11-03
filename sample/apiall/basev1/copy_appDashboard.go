@@ -16,9 +16,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/base-sdk-go/v3"
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/base/v1"
+	lark "github.com/yy307/base-sdk-go/v3"
+	larkcore "github.com/yy307/base-sdk-go/v3/core"
+	larkbase "github.com/yy307/base-sdk-go/v3/service/base/v1"
 )
 
 // POST /open-apis/bitable/v1/apps/:app_token/dashboards/:block_id/copy

@@ -15,12 +15,11 @@ package lark
 
 import (
 	"context"
+	larkcore "github.com/yy307/base-sdk-go/v3/core"
+	larkbase "github.com/yy307/base-sdk-go/v3/service/base/v1"
+	larkdrive "github.com/yy307/base-sdk-go/v3/service/drive/v1"
 	"net/http"
 	"time"
-
-	"github.com/larksuite/base-sdk-go/v3/core"
-	"github.com/larksuite/base-sdk-go/v3/service/base/v1"
-	"github.com/larksuite/base-sdk-go/v3/service/drive/v1"
 )
 
 type Client struct {
