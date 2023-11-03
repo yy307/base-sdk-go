@@ -1269,7 +1269,7 @@ type AppTableField struct {
 	FieldName   *string                   `json:"field_name,omitempty"`  // 多维表格字段名
 	Type        *int                      `json:"type,omitempty"`        // 多维表格字段类型
 	Property    *AppTableFieldProperty    `json:"property,omitempty"`    // 字段属性，具体参考：[字段编辑指南](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-field/guide)
-	Description *AppTableFieldDescription `json:"description,omitempty"` // 字段的描述
+	Description *string		      `json:"description,omitempty"` // 字段的描述
 	IsPrimary   *bool                     `json:"is_primary,omitempty"`  // 是否是索引列
 	UiType      *string                   `json:"ui_type,omitempty"`     // 字段在界面上的展示类型，例如进度字段是数字的一种展示形态
 	IsHidden    *bool                     `json:"is_hidden,omitempty"`   // 是否是隐藏字段
