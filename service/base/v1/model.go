@@ -1284,7 +1284,7 @@ type AppTableFieldBuilder struct {
 	typeFlag        bool
 	property        *AppTableFieldProperty // 字段属性，具体参考：[字段编辑指南](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-table-field/guide)
 	propertyFlag    bool
-	description     *AppTableFieldDescription // 字段的描述
+	description     string // 字段的描述
 	descriptionFlag bool
 	isPrimary       bool // 是否是索引列
 	isPrimaryFlag   bool
